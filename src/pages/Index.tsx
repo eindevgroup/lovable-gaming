@@ -26,29 +26,29 @@ const Index = () => {
         </div>
         
         <div className="container mx-auto relative z-10">
-          <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-            <Badge className="text-lg px-6 py-2 bg-primary/20 border-primary text-primary hover:bg-primary/30">
-              <Sparkles className="w-4 h-4 ml-2 inline" />
+          <div className="max-w-3xl mx-auto text-center space-y-6 animate-fade-in">
+            <Badge className="text-sm px-4 py-1.5 bg-primary/20 border-primary text-primary hover:bg-primary/30">
+              <Sparkles className="w-3 h-3 ml-1.5 inline" />
               به میدان خوش آمدید
             </Badge>
             
-            <h1 className="text-6xl md:text-8xl font-black text-glow-primary leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-glow-primary leading-tight">
               میدان نبرد را
-              <span className="block text-transparent bg-clip-text bg-gradient-primary mt-2">
+              <span className="block text-transparent bg-clip-text bg-gradient-primary mt-1">
                 فتح کن
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto font-medium">
-              به میلیون‌ها بازیکن در سراسر جهان بپیوندید. در نبردهای حماسی رقابت کنید، رتبه‌ها را فتح کنید و به افسانه تبدیل شوید.
+            <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto">
+              به میلیون‌ها بازیکن در سراسر جهان بپیوندید. در نبردهای حماسی رقابت کنید و به افسانه تبدیل شوید.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-              <Button size="lg" className="text-xl px-10 py-7 bg-gradient-primary border-0 hover:shadow-glow-primary font-bold">
-                <Zap className="w-6 h-6 ml-2" />
+            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-2">
+              <Button size="default" className="text-base px-6 py-5 bg-gradient-primary border-0 hover:shadow-glow-primary font-semibold">
+                <Zap className="w-5 h-5 ml-2" />
                 شروع بازی
               </Button>
-              <Button size="lg" variant="outline" className="text-xl px-10 py-7 font-semibold border-2">
+              <Button size="default" variant="outline" className="text-base px-6 py-5 font-medium border">
                 تماشای تریلر
               </Button>
             </div>
@@ -88,14 +88,14 @@ const Index = () => {
       {/* Featured Games Section */}
       <section id="games" className="py-20 px-4">
         <div className="container mx-auto">
-          <div className="text-center mb-16 space-y-4">
-            <Badge className="text-base px-4 py-2 bg-accent/20 border-accent text-accent">
+          <div className="text-center mb-12 space-y-3">
+            <Badge className="text-sm px-3 py-1 bg-accent/20 border-accent text-accent">
               بازی‌های برگزیده
             </Badge>
-            <h2 className="text-5xl md:text-6xl font-black text-glow-primary">
+            <h2 className="text-3xl md:text-4xl font-bold text-glow-primary">
               میدان‌های <span className="text-accent">برتر</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base text-muted-foreground max-w-lg mx-auto">
               میدان خود را انتخاب کنید و مهارت‌هایتان را نشان دهید
             </p>
           </div>
@@ -128,7 +128,7 @@ const Index = () => {
           </div>
 
           <div className="text-center">
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 font-semibold">
+            <Button size="default" variant="outline" className="text-base px-6 py-5 border font-medium">
               مشاهده همه بازی‌ها
             </Button>
           </div>
@@ -139,15 +139,15 @@ const Index = () => {
       <section className="py-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-primary opacity-10" />
         <div className="container mx-auto relative z-10">
-          <div className="max-w-3xl mx-auto text-center space-y-8">
-            <Sword className="w-20 h-20 mx-auto text-primary animate-float" />
-            <h2 className="text-5xl md:text-6xl font-black text-glow-primary">
+          <div className="max-w-2xl mx-auto text-center space-y-6">
+            <Sword className="w-14 h-14 mx-auto text-primary animate-float" />
+            <h2 className="text-3xl md:text-4xl font-bold text-glow-primary">
               آماده <span className="text-accent">رقابت</span> هستید؟
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-base text-muted-foreground">
               به انجمن نخبگان گیمینگ بپیوندید و امروز سفر خود به سوی افتخار را آغاز کنید
             </p>
-            <Button size="lg" className="text-xl px-12 py-7 bg-gradient-accent border-0 hover:shadow-glow-accent font-bold">
+            <Button size="default" className="text-base px-8 py-5 bg-gradient-accent border-0 hover:shadow-glow-accent font-semibold">
               ساخت حساب رایگان
             </Button>
           </div>
