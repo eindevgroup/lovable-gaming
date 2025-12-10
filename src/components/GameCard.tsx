@@ -27,21 +27,22 @@ export const GameCard = ({ title, image, category, players, rank, variant = "pri
 
   return (
     <Card className={`group relative overflow-hidden bg-card border-2 ${borderColors[variant]} ${glowColors[variant]} transition-all duration-500 hover:-translate-y-2 cursor-pointer`}>
-      <div className="relative h-48 overflow-hidden">
+      <figure className="relative h-48 overflow-hidden">
         <img 
           src={image} 
-          alt={title}
+          alt={`بازی ${title} - ${category}`}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
         {rank && (
           <div className="absolute top-4 left-4">
             <Badge variant="secondary" className="text-lg font-bold bg-gradient-accent border-0">
-              #{rank}
+              رتبه {rank}
             </Badge>
           </div>
         )}
-      </div>
+      </figure>
       
       <div className="p-6 space-y-4">
         <div className="flex items-start justify-between gap-2">

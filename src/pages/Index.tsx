@@ -15,12 +15,13 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 px-4 overflow-hidden">
+      <header className="relative pt-32 pb-20 px-4 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src={heroImage} 
-            alt="میدان بازی" 
+            alt="میدان بازی گیم‌زون - پلتفرم گیمینگ آنلاین" 
             className="w-full h-full object-cover opacity-20"
+            loading="eager"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background via-background/50 to-background" />
         </div>
@@ -54,10 +55,10 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </header>
 
       {/* Stats Section */}
-      <section className="py-16 px-4 bg-card/30 backdrop-blur-sm">
+      <section className="py-16 px-4 bg-card/30 backdrop-blur-sm" aria-label="آمار پلتفرم">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <StatCard
@@ -86,7 +87,7 @@ const Index = () => {
       </section>
 
       {/* Featured Games Section */}
-      <section id="games" className="py-20 px-4">
+      <main id="games" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-12 space-y-3">
             <Badge className="text-sm px-3 py-1 bg-accent/20 border-accent text-accent">
@@ -101,30 +102,36 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            <GameCard
-              title="حمله سایبری"
-              image={gameCard1}
-              category="تیراندازی"
-              players="۴۵۰ هزار آنلاین"
-              rank={1}
-              variant="primary"
-            />
-            <GameCard
-              title="بتل رویال ایکس"
-              image={gameCard2}
-              category="بتل رویال"
-              players="۱.۲ میلیون آنلاین"
-              rank={2}
-              variant="accent"
-            />
-            <GameCard
-              title="جنگ‌های فانتزی"
-              image={gameCard3}
-              category="موبا"
-              players="۸۲۰ هزار آنلاین"
-              rank={3}
-              variant="secondary"
-            />
+            <article>
+              <GameCard
+                title="حمله سایبری"
+                image={gameCard1}
+                category="تیراندازی"
+                players="۴۵۰ هزار آنلاین"
+                rank={1}
+                variant="primary"
+              />
+            </article>
+            <article>
+              <GameCard
+                title="بتل رویال ایکس"
+                image={gameCard2}
+                category="بتل رویال"
+                players="۱.۲ میلیون آنلاین"
+                rank={2}
+                variant="accent"
+              />
+            </article>
+            <article>
+              <GameCard
+                title="جنگ‌های فانتزی"
+                image={gameCard3}
+                category="موبا"
+                players="۸۲۰ هزار آنلاین"
+                rank={3}
+                variant="secondary"
+              />
+            </article>
           </div>
 
           <div className="text-center">
@@ -133,14 +140,14 @@ const Index = () => {
             </Button>
           </div>
         </div>
-      </section>
+      </main>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 relative overflow-hidden">
+      <section className="py-20 px-4 relative overflow-hidden" aria-label="عضویت در پلتفرم">
         <div className="absolute inset-0 bg-gradient-primary opacity-10" />
         <div className="container mx-auto relative z-10">
           <div className="max-w-2xl mx-auto text-center space-y-6">
-            <Sword className="w-14 h-14 mx-auto text-primary animate-float" />
+            <Sword className="w-14 h-14 mx-auto text-primary animate-float" aria-hidden="true" />
             <h2 className="text-3xl md:text-4xl font-bold text-glow-primary">
               آماده <span className="text-accent">رقابت</span> هستید؟
             </h2>
@@ -159,13 +166,16 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center space-y-4">
             <p className="text-muted-foreground">
-              © ۲۰۲۵ گیم‌زون هاب. رقابت را فتح کنید.
+              © ۲۰۲۵ گیم‌زون هاب. تمامی حقوق محفوظ است.
             </p>
-            <div className="flex justify-center gap-6 text-sm text-muted-foreground">
-              <a href="#" className="hover:text-primary transition-colors">حریم خصوصی</a>
-              <a href="#" className="hover:text-primary transition-colors">قوانین</a>
-              <a href="#" className="hover:text-primary transition-colors">پشتیبانی</a>
-            </div>
+            <nav aria-label="لینک‌های فوتر">
+              <ul className="flex justify-center gap-6 text-sm text-muted-foreground">
+                <li><a href="/privacy" className="hover:text-primary transition-colors">حریم خصوصی</a></li>
+                <li><a href="/terms" className="hover:text-primary transition-colors">قوانین</a></li>
+                <li><a href="/support" className="hover:text-primary transition-colors">پشتیبانی</a></li>
+                <li><a href="/contact" className="hover:text-primary transition-colors">تماس با ما</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
       </footer>
