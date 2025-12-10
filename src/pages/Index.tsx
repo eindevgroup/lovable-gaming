@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import { GameCard } from "@/components/GameCard";
 import { StatCard } from "@/components/StatCard";
 import { Button } from "@/components/ui/button";
@@ -161,24 +162,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 px-4 border-t border-border bg-card/30 backdrop-blur-sm">
-        <div className="container mx-auto">
-          <div className="text-center space-y-4">
-            <p className="text-muted-foreground">
-              © ۲۰۲۵ گیم‌زون هاب. تمامی حقوق محفوظ است.
-            </p>
-            <nav aria-label="لینک‌های فوتر">
-              <ul className="flex justify-center gap-6 text-sm text-muted-foreground">
-                <li><a href="/privacy" className="hover:text-primary transition-colors">حریم خصوصی</a></li>
-                <li><a href="/terms" className="hover:text-primary transition-colors">قوانین</a></li>
-                <li><a href="/support" className="hover:text-primary transition-colors">پشتیبانی</a></li>
-                <li><a href="/contact" className="hover:text-primary transition-colors">تماس با ما</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
