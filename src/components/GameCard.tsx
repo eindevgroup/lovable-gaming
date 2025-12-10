@@ -35,7 +35,7 @@ export const GameCard = ({ title, image, category, players, rank, variant = "pri
         />
         <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
         {rank && (
-          <div className="absolute top-4 right-4">
+          <div className="absolute top-4 left-4">
             <Badge variant="secondary" className="text-lg font-bold bg-gradient-accent border-0">
               #{rank}
             </Badge>
@@ -59,13 +59,13 @@ export const GameCard = ({ title, image, category, players, rank, variant = "pri
           {rank && (
             <div className="flex items-center gap-2">
               <Trophy className="w-4 h-4 text-accent" />
-              <span className="text-sm">Top Ranked</span>
+              <span className="text-sm">برتر</span>
             </div>
           )}
         </div>
 
         <Button className="w-full bg-gradient-primary border-0 hover:shadow-glow-primary font-semibold text-lg">
-          Play Now
+          بازی کن
         </Button>
       </div>
     </Card>

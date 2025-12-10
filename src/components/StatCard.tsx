@@ -36,7 +36,7 @@ export const StatCard = ({ title, value, icon: Icon, trend, variant = "primary" 
         </div>
       </div>
       
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-right" />
     </Card>
   );
 };

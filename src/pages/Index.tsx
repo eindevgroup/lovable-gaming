@@ -19,7 +19,7 @@ const Index = () => {
         <div className="absolute inset-0 z-0">
           <img 
             src={heroImage} 
-            alt="Gaming Arena" 
+            alt="میدان بازی" 
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background via-background/50 to-background" />
@@ -28,28 +28,28 @@ const Index = () => {
         <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
             <Badge className="text-lg px-6 py-2 bg-primary/20 border-primary text-primary hover:bg-primary/30">
-              <Sparkles className="w-4 h-4 mr-2 inline" />
-              Welcome to the Arena
+              <Sparkles className="w-4 h-4 ml-2 inline" />
+              به میدان خوش آمدید
             </Badge>
             
             <h1 className="text-6xl md:text-8xl font-black text-glow-primary leading-tight">
-              DOMINATE THE
+              میدان نبرد را
               <span className="block text-transparent bg-clip-text bg-gradient-primary mt-2">
-                BATTLEFIELD
+                فتح کن
               </span>
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto font-medium">
-              Join millions of players worldwide. Compete in epic battles, climb the ranks, and become a legend.
+              به میلیون‌ها بازیکن در سراسر جهان بپیوندید. در نبردهای حماسی رقابت کنید، رتبه‌ها را فتح کنید و به افسانه تبدیل شوید.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
               <Button size="lg" className="text-xl px-10 py-7 bg-gradient-primary border-0 hover:shadow-glow-primary font-bold">
-                <Zap className="w-6 h-6 mr-2" />
-                Start Playing
+                <Zap className="w-6 h-6 ml-2" />
+                شروع بازی
               </Button>
               <Button size="lg" variant="outline" className="text-xl px-10 py-7 font-semibold border-2">
-                Watch Trailer
+                تماشای تریلر
               </Button>
             </div>
           </div>
@@ -61,24 +61,24 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <StatCard
-              title="Active Players"
-              value="2.5M+"
+              title="بازیکنان فعال"
+              value="+۲.۵ میلیون"
               icon={Users}
-              trend="+15% this month"
+              trend="+۱۵٪ این ماه"
               variant="primary"
             />
             <StatCard
-              title="Daily Matches"
-              value="10M+"
+              title="مسابقات روزانه"
+              value="+۱۰ میلیون"
               icon={Target}
-              trend="+25% this week"
+              trend="+۲۵٪ این هفته"
               variant="accent"
             />
             <StatCard
-              title="Prize Pool"
-              value="$5M+"
+              title="جایزه کل"
+              value="+۵ میلیون دلار"
               icon={Trophy}
-              trend="Growing daily"
+              trend="در حال افزایش"
               variant="secondary"
             />
           </div>
@@ -90,38 +90,38 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16 space-y-4">
             <Badge className="text-base px-4 py-2 bg-accent/20 border-accent text-accent">
-              Featured Games
+              بازی‌های برگزیده
             </Badge>
             <h2 className="text-5xl md:text-6xl font-black text-glow-primary">
-              Top <span className="text-accent">Battlegrounds</span>
+              میدان‌های <span className="text-accent">برتر</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Choose your arena and prove your skills
+              میدان خود را انتخاب کنید و مهارت‌هایتان را نشان دهید
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <GameCard
-              title="Cyber Strike"
+              title="حمله سایبری"
               image={gameCard1}
-              category="FPS"
-              players="450K Online"
+              category="تیراندازی"
+              players="۴۵۰ هزار آنلاین"
               rank={1}
               variant="primary"
             />
             <GameCard
-              title="Battle Royale X"
+              title="بتل رویال ایکس"
               image={gameCard2}
-              category="Battle Royale"
-              players="1.2M Online"
+              category="بتل رویال"
+              players="۱.۲ میلیون آنلاین"
               rank={2}
               variant="accent"
             />
             <GameCard
-              title="Fantasy Wars"
+              title="جنگ‌های فانتزی"
               image={gameCard3}
-              category="MOBA"
-              players="820K Online"
+              category="موبا"
+              players="۸۲۰ هزار آنلاین"
               rank={3}
               variant="secondary"
             />
@@ -129,7 +129,7 @@ const Index = () => {
 
           <div className="text-center">
             <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 font-semibold">
-              View All Games
+              مشاهده همه بازی‌ها
             </Button>
           </div>
         </div>
@@ -142,13 +142,13 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center space-y-8">
             <Sword className="w-20 h-20 mx-auto text-primary animate-float" />
             <h2 className="text-5xl md:text-6xl font-black text-glow-primary">
-              Ready to <span className="text-accent">Compete?</span>
+              آماده <span className="text-accent">رقابت</span> هستید؟
             </h2>
             <p className="text-xl text-muted-foreground">
-              Join the elite gaming community and start your journey to glory today
+              به انجمن نخبگان گیمینگ بپیوندید و امروز سفر خود به سوی افتخار را آغاز کنید
             </p>
             <Button size="lg" className="text-xl px-12 py-7 bg-gradient-accent border-0 hover:shadow-glow-accent font-bold">
-              Create Free Account
+              ساخت حساب رایگان
             </Button>
           </div>
         </div>
@@ -159,12 +159,12 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center space-y-4">
             <p className="text-muted-foreground">
-              © 2025 GameZone Hub. Dominate the competition.
+              © ۲۰۲۵ گیم‌زون هاب. رقابت را فتح کنید.
             </p>
             <div className="flex justify-center gap-6 text-sm text-muted-foreground">
-              <a href="#" className="hover:text-primary transition-colors">Privacy</a>
-              <a href="#" className="hover:text-primary transition-colors">Terms</a>
-              <a href="#" className="hover:text-primary transition-colors">Support</a>
+              <a href="#" className="hover:text-primary transition-colors">حریم خصوصی</a>
+              <a href="#" className="hover:text-primary transition-colors">قوانین</a>
+              <a href="#" className="hover:text-primary transition-colors">پشتیبانی</a>
             </div>
           </div>
         </div>
